@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <p>ppppp</p>
-    <p>trzeci paragraf</p>
-    <p> drugi paragraf</p>
+    <form action="https://formspree.io/f/mjvlqjlg" method="POST">
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie"><br>
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" name="nazwisko" id="nazwisko"><br>
+        <label for="mail">Adres e-mail</label>
+        <input type="email" name="mail" id="mail"><br>
+        <label for="telefon">Numer telefonu</label>
+        <input type="number" name="telefon" id="telefon"><br>
+        <label for="miasto">Miasto</label>
+        <select id="miasto">
+            <option value="value1">Kraków</option>
+            <option value="value2">Warszawa</option>
+            <option value="value3">Gdańsk</option>
+        </select><br>
+        <label for="płeć1">Płeć</label>
+        <label for="płeć2">Płeć</label>
+        <input type="radio" id="płeć1" name="płeć1">Kobieta
+        <input type="radio" id="płeć2" name="płeć2">Mężczyzna<br>
+        <label for="zgoda-na-dane-osobowe">Wyraź zgodę na przekazanie danych osobowych</label>
+        <input type="checkbox" name="zgoda na dane osobowe" id="zgoda-na-dane-osobowe"><br>
+        <label for="wiadomość">Napisz wiadomość:</label>
+        <textarea maxlength="500" name="wiadomość" id="wiadomość"></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
 </body>
+
 </html>
